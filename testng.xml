@@ -1,0 +1,8 @@
+<suite name="UIRegression" parallel="methods" thread-count="2">
+    <test name="OrderTests">
+        <classes>
+            <class name="tests.OrderFlowTest"/>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>
