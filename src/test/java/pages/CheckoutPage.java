@@ -12,7 +12,7 @@ public class CheckoutPage {
     private By postalCode = By.id("postal-code");
     private By continueBtn = By.id("continue");
     private By finishBtn = By.id("finish");
-    private By successMsg = By.className("complete-header");
+    final By successMsg = By.className("complete-header");
 
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;

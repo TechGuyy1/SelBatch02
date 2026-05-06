@@ -15,6 +15,7 @@ public class LoginTest extends BaseTest {
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
         loginPage.clickLogin();
+        //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
 
 
         Assert.assertTrue(loginPage.isLoginSuccessful(),
