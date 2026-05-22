@@ -15,6 +15,7 @@ public class OrderFlowTest extends BaseTest {
     public void placeOrderTest() {
 
         LoginPage login = new LoginPage(DriverFactory.getDriver());
+        DriverFactory.getDriver().get("https://www.saucedemo.com/");
         login.enterUsername("standard_user");
         login.enterPassword("secret_sauce");
         login.clickLogin();

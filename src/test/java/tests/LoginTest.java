@@ -11,7 +11,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void validLoginTest() {
         LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
-
+        DriverFactory.getDriver().get("https://www.saucedemo.com/");
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
         loginPage.clickLogin();
