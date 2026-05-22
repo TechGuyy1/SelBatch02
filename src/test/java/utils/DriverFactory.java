@@ -12,15 +12,16 @@ public class DriverFactory {
 
     public static void initDriver() {
         WebDriverManager.chromedriver().setup();
-//        driver.set(new ChromeDriver());
-//        driver.get().manage().window().maximize();
+        driver.get().manage().window().maximize();
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
-//        options.addArguments("--no-sandbox");
-//        options.addArguments("--disable-dev-shm-usage");
-//        options.addArguments("--window-size=1920,1080");
+        String githubActions= System.getenv("GITHUB_ACTIONS");
+        if("true".equalsIgnoreCase(githubActions)){
+            options.addArguments("--headless");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");
 
-//        WebDriverManager.chromedriver().setup();
+        }
         driver.set(new ChromeDriver(options));
 //        driver.set(new ChromeDriver());
         //If we want to run  on headed remove the options
