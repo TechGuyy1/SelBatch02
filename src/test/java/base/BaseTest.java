@@ -9,7 +9,7 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         DriverFactory.initDriver();
-//            DriverFactory.getDriver().get("https://www.saucedemo.com/");
+            DriverFactory.getDriver().get("https://demowebshop.tricentis.com/login");
     }
 
     @AfterMethod
