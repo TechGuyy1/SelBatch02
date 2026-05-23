@@ -22,7 +22,6 @@ public class OrderFlowTest extends BaseTest {
 //loginTest.validLoginTest(); ---> This is not a good practice to call a test as a reusable method instead create a reusable method in helper class or page class class
 //
 //Commenting below line just to check CI failure check
-//        LoginPage login = new LoginPage(DriverFactory.getDriver());
 //        ProductsPage products = new ProductsPage(DriverFactory.getDriver());
 //        products.acceptJsAlert();
 //        products.addProductToCart();
